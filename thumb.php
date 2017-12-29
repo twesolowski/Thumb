@@ -7,6 +7,10 @@ Author:     Jamie Bicknell
 Twitter:    @jamiebicknell
 */
 
+if (is_file(dirname(__FILE__).'/defines_custom.inc.php')) {
+    include_once(dirname(__FILE__).'/defines_custom.inc.php');
+}
+
 require_once(dirname(__FILE__).'/defines.inc.php');
 
 $src = isset($_GET['src']) ? $_GET['src'] : false;
